@@ -1,0 +1,162 @@
+CSS Reset*/
+* {
+	margin: 0;
+	/*margin property changes the amt of space between the border
+	and its surrounding elements*/
+	/*This is commonly used to create a space between elements*/
+	padding: 0;
+	/*padding property changes the amt of space between the border
+	and the content of an element*/
+	/*This is commonly used to position the content of an element.*/
+	box-sizing: border-box;
+	/*box sizing property defines how the width and height of an 
+	element are calculated*/
+	/*This allow us to control the measurrements of the elements better.*/
+	/*The value border-box includes the padding and border properties of an
+	element to the total height and width in its computation*/
+	/*This can be translated to "the total width/height of an element is (num)
+	which includes the padding and border" as opposed to its initial context of
+	"The total width/height of an element is (num) PLUS the padding and the border.*/
+}
+
+/*Everytime na gagawa ng CSS to reset the above mentioned values*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	/*shorthand property - it follows the D. R. Y. principle*/
+	padding: 0.8rem; /*16px minimum*/
+
+/*	Properties that make up the "padding" property
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 30px;
+	padding-bottom: 40px;*/
+	/*Kapag iba-iba ang value ang spaces*/
+	margin-bottom: 2rem; /*space between elements*/
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+}
+
+nav .nav, nav .nav-logo {
+	display: inline; /*pano madisplay ang element*/
+	/*inline changes the li elements into inline*/
+	/*By default, li elements are block elements*/
+	/*This make all the list items appear beside one another*/
+	margin: 0.5rem;
+}
+
+#intro {
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem; /*1 rem = 16px*/
+	padding-bottom: 3rem;
+}
+
+/*margin (size) vs. padding (space)*/
+/*margin is best used when creating space IN-BETWEEN elements*/
+/*Example here is nav*/
+
+/*padding is best used when creating space between an element's
+border and it's content*/
+/*Example here is the content*/
+
+/*The padding left, right, top, and bottom may be used in this situation
+since the value are different.*/
+/*10% value is used to make the page responsive to the screen size*/
+/*It generates it's value based on the parent element which is the body tag
+which spans the whole width of the page*/
+
+
+.header {
+	text-align: center;
+}
+
+#intro h2, #intro p {
+	margin-bottom: 1rem; /*humiwalay sa header*/
+}
+
+#intro button {
+	padding: 1rem /*top & bottom*/2rem; /*left & right*/ /*lumaki ang button*/
+	color: white;
+	background-color: #c2195b;
+	border-radius: 25px;
+	font-weight: bold;
+}
+	/*used padding if same ang lahat ng edges size*/
+	/*Other scenario
+	padding: 1rem (top) 2rem (right) 3rem (bottom) 4rem; (left)
+	padding: 1rem (top) 2rem (left & right) 3rem (bottom)*/
+
+#succeed-info {
+	/*padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	padding-bottom: 3rem;*/
+	padding: 2rem 10% 3rem;
+}
+
+#succeed-info h2 {
+	margin-bottom: 1rem;
+}
+
+#succeed-info h3 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.card {
+	display: inline-block;
+	/*Allows the .cards to appear beside each other
+	*/
+	vertical-align: top; /*Laging magkasama ang tatlo*/
+	/*vertical aligns elements with the tallest element in line*/
+	/*Used along with the inline-block value*/
+
+	width: 30%; /*para maghati-hati*/
+	/*Width property uses the "%" value which dividesthe whole width
+	of the container into 3 parts bcs we are horizontally aligning
+	3 components*/
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	min-height: 175px;
+	/*allows the cards to have equal height that adjust with the content*/
+}
+
+footer {
+	padding: 0.7rem;
+	text-align: center;
+}
+
+footer span { 
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+/*span is an inline elements*/
+/*It is a container that we use for INLINE ELEMENT*/
+
+#pre-footer {
+	background-color: #002540;
+	color: white;
+}
+
+.foot {
+	display: inline-block;
+	vertical-align: top;
+	width: 15%; 
+	margin-left: 110px;
+}
+
+.content {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.head {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
